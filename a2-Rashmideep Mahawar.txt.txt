@@ -2,7 +2,7 @@ from sys import exit
 def start():
     print("Welcome to the game : The Diamond Ring")
     player_name = input("What is name my friend? ")
-    print("Hello! %s" %player_name")
+    print("Hello! %s" %player_name)
     print("\t\t ^ ^")
     print("\t\t  v")
     print("lets introduce you to the game")
