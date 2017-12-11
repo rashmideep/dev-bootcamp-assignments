@@ -1,0 +1,110 @@
+from sys import exit
+def start():
+    print("Welcome to the game : The Diamond Ring")
+    player_name = input("What is name my friend? ")
+    print("Hello! %s" %player_name")
+    print("\t\t ^ ^")
+    print("\t\t  v")
+    print("lets introduce you to the game")
+    print("You are an obsertant man . You work at Ruby's, an antique jewellery shop . Mrs is the owner and you and Mr Steve are two assistants.")
+    print("...Everyday you put some pieces of jewellery in the windows for showcase purpose.")
+    print("So today you are working and noticed a girl from the window.")
+    print("Then a man comes into Ruby's , nicely dressed and was chewing gum. What will you do naow?")
+    print("Keeping job in mind will you serve him?")
+    do_what = input(">")
+    
+    for do_what != False:
+          if do_whtat == "serve him" or do_what == "yes" :
+                    print("Yeah! you are a good assistant.")
+                    print("\t\t ^ ^")
+                    print("\t\t  v")
+                    activity = input("Now you are showing him rings? y/n > ")
+
+                    if activity == "y" or activity == "Y" :
+                                print("Great!")
+                    else :
+                          print ("What are you waiting for?!")
+                          print("Show your marketing skills!!")
+                    print (" You are doing your work in the right way but it seems that the man is quite confused")
+                    print("Will you show hi  more rings?")
+                    answer = input(">")
+                    
+                    if answer == "yes" :
+                             lost_ring()
+                    else if answer == no :
+                             dead()
+                   else:
+                        print(" I got no idea what are you saying . You should be more clear.")
+                        dead()
+          else:
+               print("I got no idea what are you saying . You should be more clear.")
+
+def lost_ring():
+    print("You are a good person . You have so much patience. Great!")
+    print("\t\t ^ ^")
+    print("Now you come back with a new box of jewellwries.")
+    print("Suddenly you noticed that a beautiful flower diamond ring is missing.")
+    print("You are a good person but you should also be suspicious sometimes.")
+    
+    find_ring = input("Will you suspect the customer ? y/n > ")
+    if find_ring == yes:
+           suspect()
+    else:
+         dead()
+
+def suspect():
+    print("Don't forget you are an observant.")
+    print("You are a suspicious person but due to this the customer got angry.")
+    print("At the same time  you noticed that the man is chewing the gum anymore.")
+    
+    notice = input("Can this be a clue?")
+    if notice == "yes" or notice == "y" :
+           print("Hmmm... lets see.")
+    else:
+         dead()
+    print("But somehow you manage to agree him to have a check.")
+    print("Another assistant take him to the nearby room.")
+    print("The girl you noticed in the morning comes to get her cheap brooch repaired in such an expensive shop!. Isn't this wierd.")
+    remembering_girl = input("Do you remember this girl? >")
+    if remembering_girl == "yes" or remembering_girl == "y" :
+           print("Good.")
+           girl()
+ 
+def girl():
+    print("She put that brooch on the counter but the brooch fall off the counter on your side.")
+    clue = input("Is this an accident or done cleverly? >")
+    if clue == accident :
+           dead()
+    else:
+           print("Yeah! getting it ha...")
+    print("You bent down to pick the ring up and then you noticed chewing gum.")
+    print("Now !")
+    print("Got any idea of the culprit? >")
+    idea = input(" > ")
+    if idea == "yes" :
+           found()
+    else:
+           dead()
+
+def found():
+    culprit = input("So who is the culprit? > ")
+    if culprit == "girl" :
+           win()
+    else:
+          dead()
+
+def win():
+    print("Yeah! you win.")
+    print("\t\t Congrats!!")
+    print("Exit or wnt to play once again ? y/n ")
+    exit = input(" > ")
+    if exit == "y" or exit == "Y" :
+         exit(0)
+    else:
+        start()
+
+def dead():
+    print("Wrong move my friend.")
+    exit(0)
+
+start()
